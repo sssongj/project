@@ -11,9 +11,13 @@
 }
 #main {
     padding-left: 245px;
+    padding-top: 50px;
     height: 2000px;
     background: #000;
     color: #fff;
+}
+.container {
+    margin: 0 75px;
 }
 
 /* header */
@@ -35,8 +39,22 @@
     font-weight: 700; 
 }
 #header .search_area {
-    padding: 0 16px;
-    margin-bottom: 40px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+#header .search_area::before {
+    content: '';
+    background-position: -88px -529px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 33px;
+    z-index: 100;
+    text-align: center;
+    background-image: url(https://vibe.naver.com/20211216203844_resources/img/sp_topbar.1a0fe33c.svg);
+    background-size: 557px 553px;
 }
 #header .search_area label {
     display: none;
@@ -47,7 +65,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     word-break: break-all;
-    padding: 10px 16px;
+    padding: 10px 46px;
     width: 100%;
     height: 40px;
     border: 0;
@@ -58,18 +76,17 @@
     line-height: 20px;
     letter-spacing: -.3px;
     color: #fff;
+    position: relative;
+    caret-color: #ff0050;
 }
 #header .menu_area {
-    height: 50px;
-    padding: 0 20px;
-}
-#header .menu_area li {
-
+    padding: 0 20px 20px 20px;
+    border-bottom: 1px solid #1a1a1a;
 }
 #header .menu_area li a {
     color: #fff;
-    font-size: 20px;
-    padding: 5px 0 5px 30px;
+    font-size: 18px;
+    padding: 7px 0 5px 30px;
     display: block;
     margin: 1px 0;
     position: relative;
@@ -96,4 +113,19 @@
 }
 #header .menu_area li:nth-child(5) a::before {
     background-position: -428px -431px;
+}
+
+/* contents */
+.headline {
+    height: 500px; 
+    background: #ccc;
+}
+.headline-box {
+    display: flex;
+}
+.headline-box .left {
+    width: 40%;
+}
+.headline-box .right {
+    width: 70%;
 }

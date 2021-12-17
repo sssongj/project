@@ -154,7 +154,7 @@ select {
 }
 
 /* 글씨 감추기 */
-.sr-only {
+.blind {
     position: absolute;
     width: 1px;
     height: 1px;
