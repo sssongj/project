@@ -1,0 +1,99 @@
+/* layout */
+#header {
+    position: fixed;
+    top: 0;
+    bottom: 81px;
+    width: 245px;
+    z-index: 10100;
+    background-color: #000;
+    border-right: 1px solid hsla(0,0%,100%,.1);
+    color: #fff;
+}
+#main {
+    padding-left: 245px;
+    height: 2000px;
+    background: #000;
+    color: #fff;
+}
+
+/* header */
+#header .logo {
+    color: #fff;
+    font-size: 20px;
+    padding: 24px;
+    font-family: 'NexonLv1GothicLow';
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#header .logo em {
+    font-size: 14px;
+    padding-right: 5px;
+    vertical-align: 2px;
+    font-size: 12px;
+    letter-spacing: 0;
+    font-weight: 700; 
+}
+#header .search_area {
+    padding: 0 16px;
+    margin-bottom: 40px;
+}
+#header .search_area label {
+    display: none;
+}
+#header .search_area .input_search {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+    padding: 10px 16px;
+    width: 100%;
+    height: 40px;
+    border: 0;
+    background-color: #1a1a1a;
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -.3px;
+    color: #fff;
+}
+#header .menu_area {
+    height: 50px;
+    padding: 0 20px;
+}
+#header .menu_area li {
+
+}
+#header .menu_area li a {
+    color: #fff;
+    font-size: 20px;
+    padding: 5px 0 5px 30px;
+    display: block;
+    margin: 1px 0;
+    position: relative;
+}
+#header .menu_area li a::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0; top: 8px;
+    background-position: -426px -403px;
+    width: 20px;
+    height: 20px;
+    background-image: url(https://vibe.naver.com/20211216203844_resources/img/sp_topbar.1a0fe33c.svg);
+    background-size: 557px 553px;
+}
+#header .menu_area li:nth-child(2) a::before {
+    background-position: -457px -459px;
+}
+#header .menu_area li:nth-child(3) a::before {
+    background-position: -232px -431px;
+}
+#header .menu_area li:nth-child(4) a::before {
+    background-position: -372px -431px;
+}
+#header .menu_area li:nth-child(5) a::before {
+    background-position: -428px -431px;
+}
